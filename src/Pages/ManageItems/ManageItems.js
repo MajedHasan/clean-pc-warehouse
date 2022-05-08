@@ -9,7 +9,7 @@ const ManageItems = () => {
     const handleDeleteItem = async id => {
         const confirm = window.confirm("Are you sure you want to delete?")
         if (confirm) {
-            const url = `http://localhost:5000/deleteitem/${id}`
+            const url = `https://secure-stream-89996.herokuapp.com/deleteitem/${id}`
             const deleteItem = await axios.delete(url)
             if (deleteItem) {
                 const remaningItem = inventories.filter(item => item._id !== id)

@@ -32,7 +32,7 @@ const AddItem = () => {
 
         const newItem = { itemName, price, quantity, supplierName, img, description, email }
 
-        const url = `http://localhost:5000/inventory`
+        const url = `https://secure-stream-89996.herokuapp.com/inventory`
         const response = await axios.post(url, newItem)
         console.log(response)
         if (!response) {

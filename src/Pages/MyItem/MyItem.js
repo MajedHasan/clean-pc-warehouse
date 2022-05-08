@@ -14,7 +14,7 @@ const MyItem = () => {
     useEffect(() => {
         const loadMyItem = async () => {
             const email = user?.email
-            const url = `http://localhost:5000/myitem?email=${email}`
+            const url = `https://secure-stream-89996.herokuapp.com/myitem?email=${email}`
             try {
                 const { data } = await axios.get(url, {
                     headers: {
@@ -37,7 +37,7 @@ const MyItem = () => {
     const handleDeleteItem = async id => {
         const confirm = window.confirm("Are you sure you want to delete?")
         if (confirm) {
-            const url = `http://localhost:5000/deleteitem/${id}`
+            const url = `https://secure-stream-89996.herokuapp.com/deleteitem/${id}`
             const deleteItem = await axios.delete(url)
             if (deleteItem) {
                 const remaningItem = myItem.filter(item => item._id !== id)

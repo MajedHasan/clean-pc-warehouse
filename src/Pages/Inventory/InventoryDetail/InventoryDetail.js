@@ -8,7 +8,7 @@ const InventoryDetail = () => {
     const { id } = useParams()
 
     useEffect(() => {
-        const url = `http://localhost:5000/inventory/${id}`
+        const url = `https://secure-stream-89996.herokuapp.com/inventory/${id}`
         fetch(url)
             .then(res => res.json())
             .then(data => {
@@ -29,7 +29,7 @@ const InventoryDetail = () => {
         if (itemQuantity > 0) {
             const newQuantity = itemQuantity - 1
 
-            const url = `http://localhost:5000/inventory/${id}`
+            const url = `https://secure-stream-89996.herokuapp.com/inventory/${id}`
             fetch(url, {
                 method: "PUT",
                 headers: {
@@ -56,7 +56,7 @@ const InventoryDetail = () => {
 
             const newQuantity = parseInt(itemQuantity) + inputQuantity
 
-            const url = `http://localhost:5000/inventory/${id}`
+            const url = `https://secure-stream-89996.herokuapp.com/inventory/${id}`
             fetch(url, {
                 method: "PUT",
                 headers: {
