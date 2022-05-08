@@ -1,0 +1,28 @@
+.banner-section {
+    background: url(../../../images/home-page-banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.banner-section .bg-color {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.banner-section .content {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.banner-section .content h2 {
+    color: #FFFFFF;
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.banner-section .content .btn {
+    text-transform: uppercase;
+}

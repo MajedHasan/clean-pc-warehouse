@@ -1,0 +1,14 @@
+footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+footer .col a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
