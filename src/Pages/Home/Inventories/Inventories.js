@@ -4,7 +4,7 @@ import useInventory from '../../../hooks/useInventory';
 
 const Inventories = () => {
 
-    const [inventories, setInventories] = useInventory()
+    const [inventories] = useInventory()
 
     return (
         <section className='inventory-section my-5 py-3' id='inventory'>
