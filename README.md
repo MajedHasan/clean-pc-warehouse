@@ -7,3 +7,5 @@
 
 
 #### Client side Live Link (https://p-hero-assignment-11.web.app/)
+
+###### This is a inventory management system website. This is for manage brand new/ second hand laptop stock.
