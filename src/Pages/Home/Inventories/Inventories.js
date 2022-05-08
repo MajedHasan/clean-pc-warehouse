@@ -1,15 +1,10 @@
 import React from 'react';
 import Inventory from '../../Inventory/Inventory/Inventory';
 import useInventory from '../../../hooks/useInventory';
-import Loading from '../../Shared/Loading/Loading';
 
 const Inventories = () => {
 
     const [inventories, setInventories] = useInventory()
-
-    if (!inventories) {
-        return <Loading></Loading>
-    }
 
     return (
         <section className='inventory-section my-5 py-3' id='inventory'>
